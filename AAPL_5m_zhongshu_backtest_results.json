@@ -1,0 +1,170 @@
+{
+  "total_trades": 0,
+  "win_rate": 0,
+  "total_pnl": 0,
+  "avg_pnl": 0,
+  "max_drawdown": 0,
+  "trades": [],
+  "equity_curve": [
+    {
+      "date": "2025/12/19 15:55",
+      "price": 273.6700134277344,
+      "position": {
+        "is_long": false,
+        "entry_price": 0,
+        "entry_date": null,
+        "quantity": 1000
+      },
+      "bi_info": null,
+      "zs_info": {
+        "direction": "up",
+        "high": 272.9599914550781,
+        "low": 269.94000244140625,
+        "peak_high": 274.5762939453125,
+        "peak_low": 266.9599914550781,
+        "bi_count": 0
+      },
+      "action": null
+    },
+    {
+      "date": "2025/12/23 15:45",
+      "price": 271.94000244140625,
+      "position": {
+        "is_long": false,
+        "entry_price": 0,
+        "entry_date": null,
+        "quantity": 1000
+      },
+      "bi_info": null,
+      "zs_info": {
+        "direction": "down",
+        "high": 272.1199951171875,
+        "low": 271.5,
+        "peak_high": 272.44000244140625,
+        "peak_low": 271.1099853515625,
+        "bi_count": 0
+      },
+      "action": null
+    },
+    {
+      "date": "2025/12/30 15:20",
+      "price": 273.3450012207031,
+      "position": {
+        "is_long": false,
+        "entry_price": 0,
+        "entry_date": null,
+        "quantity": 1000
+      },
+      "bi_info": null,
+      "zs_info": {
+        "direction": "up",
+        "high": 273.4744873046875,
+        "low": 273.0899963378906,
+        "peak_high": 273.52178955078125,
+        "peak_low": 272.2799987792969,
+        "bi_count": 0
+      },
+      "action": null
+    },
+    {
+      "date": "2026/01/05 10:05",
+      "price": 271.1000061035156,
+      "position": {
+        "is_long": false,
+        "entry_price": 0,
+        "entry_date": null,
+        "quantity": 1000
+      },
+      "bi_info": null,
+      "zs_info": {
+        "direction": "up",
+        "high": 270.4800109863281,
+        "low": 269.1099853515625,
+        "peak_high": 271.17999267578125,
+        "peak_low": 269.0199890136719,
+        "bi_count": 0
+      },
+      "action": null
+    },
+    {
+      "date": "2026/01/05 15:35",
+      "price": 267.4200134277344,
+      "position": {
+        "is_long": false,
+        "entry_price": 0,
+        "entry_date": null,
+        "quantity": 1000
+      },
+      "bi_info": null,
+      "zs_info": {
+        "direction": "up",
+        "high": 267.489990234375,
+        "low": 266.7701110839844,
+        "peak_high": 267.8900146484375,
+        "peak_low": 266.1400146484375,
+        "bi_count": 0
+      },
+      "action": null
+    },
+    {
+      "date": "2026/01/06 15:45",
+      "price": 262.8666076660156,
+      "position": {
+        "is_long": false,
+        "entry_price": 0,
+        "entry_date": null,
+        "quantity": 1000
+      },
+      "bi_info": null,
+      "zs_info": {
+        "direction": "up",
+        "high": 262.9601135253906,
+        "low": 262.29998779296875,
+        "peak_high": 263.79998779296875,
+        "peak_low": 262.260009765625,
+        "bi_count": 0
+      },
+      "action": null
+    },
+    {
+      "date": "2026/01/07 14:20",
+      "price": 261.381591796875,
+      "position": {
+        "is_long": false,
+        "entry_price": 0,
+        "entry_date": null,
+        "quantity": 1000
+      },
+      "bi_info": null,
+      "zs_info": {
+        "direction": "down",
+        "high": 262.20001220703125,
+        "low": 261.2665100097656,
+        "peak_high": 262.70001220703125,
+        "peak_low": 261.0799865722656,
+        "bi_count": 0
+      },
+      "action": null
+    },
+    {
+      "date": "2026/01/09 09:30",
+      "price": 258.6099853515625,
+      "position": {
+        "is_long": false,
+        "entry_price": 0,
+        "entry_date": null,
+        "quantity": 1000
+      },
+      "bi_info": null,
+      "zs_info": {
+        "direction": "up",
+        "high": 257.6300048828125,
+        "low": 256.5979919433594,
+        "peak_high": 260.0,
+        "peak_low": 255.6999969482422,
+        "bi_count": 0
+      },
+      "action": null
+    }
+  ]
+}

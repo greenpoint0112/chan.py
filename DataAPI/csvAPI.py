@@ -65,6 +65,12 @@ class CSV_API(CCommonStockApi):
             DATA_FIELD.FIELD_TURNOVER,
             DATA_FIELD.FIELD_TURNRATE,
         ]  # 每一列字段
+
+        # 转换日期字符串为CTime对象以便比较
+        if begin_date:
+            begin_date = parse_time_column(begin_date) if isinstance(begin_date, str) else begin_date
+        if end_date:
+            end_date = parse_time_column(end_date) if isinstance(end_date, str) else end_date
         self.time_column_idx = self.columns.index(DATA_FIELD.FIELD_TIME)
         super(CSV_API, self).__init__(code, k_type, begin_date, end_date, autype)
 
@@ -97,11 +103,17 @@ class CSV_API(CCommonStockApi):
             data = line.strip("\n").split(",")
             if len(data) != len(self.columns):
                 raise CChanException(f"file format error: {file_path}", ErrCode.SRC_DATA_FORMAT_ERROR)
-            if self.begin_date is not None and data[self.time_column_idx] < self.begin_date:
+
+            # 创建数据字典并解析时间
+            item_dict = create_item_dict(data, self.columns)
+            parsed_time = item_dict[DATA_FIELD.FIELD_TIME]
+
+            # 时间过滤 (使用解析后的时间对象)
+            if self.begin_date is not None and parsed_time < self.begin_date:
                 continue
-            if self.end_date is not None and data[self.time_column_idx] > self.end_date:
+            if self.end_date is not None and parsed_time > self.end_date:
                 continue
-            yield CKLine_Unit(create_item_dict(data, self.columns))
+            yield CKLine_Unit(item_dict)
 
     def SetBasciInfo(self):
         pass
